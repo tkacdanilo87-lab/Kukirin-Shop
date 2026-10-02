@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформлення замовлення – KuKirin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">KuKirin<span>.ua</span></a>
+            <nav class="nav">
+                <a href="index.html#catalog">Каталог</a>
+                <a href="service.html">Тест-драйв & Сервіс</a>
+                <a href="#footer">Контакти</a>
+            </nav>
+            <a href="cart.html" class="cart-btn" style="background: #222; border: 1px solid #ff5722;">🛒 Кошик (<span id="cart-count">0</span>)</a>
+        </div>
+    </header>
+
+    <!-- Секция корзины -->
+    <section class="container" style="padding: 60px 20px;">
+        <h2 class="section-title">Ваш Кошик та Оформлення замовлення</h2>
+        
+        <div class="grid-2" style="align-items: start; margin-top: 30px;">
+            <div id="cart-page-items" style="width: 100%;">
+            </div>
+
+
+            <div class="form-box">
+                <h3>Підтвердження покупки</h3>
+                <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #ff5722;">
+                    <p style="display:flex; justify-content:space-between; margin-bottom:5px;">Разом товарів: <strong id="summary-count">0</strong></p>
+                    <p style="display:flex; justify-content:space-between;">Сума до сплати: <strong id="summary-price" style="color: #ff5722; font-size: 20px;">0 ₴</strong></p>
+                </div>
+                
+                <form id="checkout-form" onsubmit="confirmOrder(event)">
+                    <input type="text" placeholder="Ваше Ім'я та Прізвище" required style="width:100%; padding:12px; margin-bottom:15px; border:1px solid #ddd; border-radius:6px;">
+                    <input type="tel" placeholder="Номер телефону" required style="width:100%; padding:12px; margin-bottom:15px; border:1px solid #ddd; border-radius:6px;">
+                    <input type="text" placeholder="Місто та номер Нової Пошти" required style="width:100%; padding:12px; margin-bottom:15px; border:1px solid #ddd; border-radius:6px;">
+                    <select required style="width:100%; padding:12px; margin-bottom:15px; border:1px solid #ddd; border-radius:6px;">
+                        <option value="">Оберіть спосіб оплати</option>
+                        <option value="cash">Оплата при отриманні (Накладений платіж)</option>
+                        <option value="card">Оплата картою онлайн</option>
+                    </select>
+                    <button type="submit" class="btn-primary" style="width: 100%;">Підтвердити замовлення</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <p>📍 Київ, вул. Велика Васильківська, 140 | 📞 0 800 333 44 55</p>
+            <p class="copy">&copy; 2026 KuKirin Україна. Всі права захищено.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
