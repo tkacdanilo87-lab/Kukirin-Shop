@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kugoo Kirin – Офіційний магазин</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">KuKirin<span>.ua</span></a>
+            <nav class="nav">
+                <a href="index.html#catalog" class="active">Каталог</a>
+                <a href="service.html">Тест-драйв & Сервіс</a>
+                <a href="#contacts">Контакти</a>
+            </nav>
+            <a href="cart.html" class="cart-btn">🛒 Перейти до кошика (<span id="cart-count">0</span>)</a>
+        </div>
+    </header>
+
+  
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-subtitle">Преміальний міський транспорт</span>
+            <h1>Відкрий нову швидкість твого міста</h1>
+            <p>Оригінальні електросамокати KuKirin з офіційною гарантією та безкоштовним тест-драйвом.</p>
+            <a href="#catalog" class="btn-primary">Перейти до каталогу</a>
+        </div>
+    </section>
+
+   
+    <section class="features container">
+        <div class="feature-card">⚡ <h3>Швидка доставка</h3><p>Відправка в день замовлення по Україні</p></div>
+        <div class="feature-card">🛡️ <h3>1 рік гарантії</h3><p>Власний сервісний центр та запчастини</p></div>
+        <div class="feature-card">💳 <h3>Розстрочка 0%</h3><p>Зручна оплата частинами від банків</p></div>
+    </section>
+
+    
+    <section id="catalog" class="catalog container">
+        <h2 class="section-title">Оберіть свій KuKirin</h2>
+        
+        <div class="products-grid">
+            
+           
+            <div class="product-card">
+                <div class="badge badge-hit">Хіт ціни</div>
+                <div class="product-img-box">
+                    <img src="https://i.allo.ua/media/catalog/product/cache/1/image/710x600/602f0fa2c1f0d1ba5e241f914e856ff9/import/d71406891de52ccc2c16402a6e1c8cc5.webp" alt="Kugoo Kirin S3 Pro">
+                </div>
+                <h3>Kugoo Kirin S3 Pro</h3>
+                <p class="specs">⏱️ 30 км/год | 🔋 до 25 км | 🔌 350 Вт | ⚖️ 12 кг</p>
+                <div class="product-footer">
+                    <span class="price">11 500 ₴</span>
+                    <button class="btn-buy" onclick="addToCart('Kugoo Kirin S3 Pro', 11500)">Купити</button>
+                </div>
+            </div>
+
+          
+            <div class="product-card">
+                <div class="badge badge-hit">Надійний міський</div>
+                <div class="product-img-box">
+                    <img src="https://brain.com.ua/static/images/prod_img/0/2/U1170902_1779229982.jpg" alt="Kugoo Kirin S1 Max">
+                </div>
+                <h3>Kugoo Kirin S1 Max</h3>
+                <p class="specs">⏱️ 30 км/год | 🔋 до 30 км | 🔌 500 Вт | ⚖️ 15 кг</p>
+                <div class="product-footer">
+                    <span class="price">14 990 ₴</span>
+                    <button class="btn-buy" onclick="addToCart('Kugoo Kirin S1 Max', 14990)">Купити</button>
+                </div>
+            </div>
+
+        
+            <div class="product-card">
+                <div class="badge badge-hit">Легенда</div>
+                <div class="product-img-box">
+                    <img src="https://ollo.net.ua/image/cache/catalog/product/samokaty/042045/M4-PRO-PLUS-holovna-1280x1280.jpg" alt="Kugoo Kirin M4 Pro">
+                </div>
+                <h3>Kugoo Kirin M4 Pro</h3>
+                <p class="specs">⏱️ 45 км/год | 🔋 до 45 км | 🔌 500 Вт | 💺 З сидінням</p>
+                <div class="product-footer">
+                    <span class="price">24 500 ₴</span>
+                    <button class="btn-buy" onclick="addToCart('Kugoo Kirin M4 Pro', 24500)">Купити</button>
+                </div>
+            </div>
+
+           
+            <div class="product-card">
+                <div class="badge badge-power">Класика</div>
+                <div class="product-img-box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDvJnAuV5rO0S5Luv15J7Sufg3HCjZ6L5MR4X-aUSZng&s=10" alt="KuKirin G1">
+                </div>
+                <h3>KuKirin G1 (Kugoo)</h3>
+                <p class="specs">⏱️ 40 км/год | 🔋 до 40 км | 🔌 500 Вт | 🔋 13Ah</p>
+                <div class="product-footer">
+                    <span class="price">21 800 ₴</span>
+                    <button class="btn-buy" onclick="addToCart('KuKirin G1 (Kugoo)', 21800)">Купити</button>
+                </div>
+            </div>
+
+          
+            <div class="product-card">
+                <div class="badge badge-power">Новинка</div>
+                <div class="product-img-box">
+                    <img src="https://altpower.com.ua/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2026/03/kugoo-kirin-g2-2025-z-kliuchem-zapaliuvannia-53270470236574-1.jpg.webp" alt="KuKirin G2">
+                </div>
+                <h3>KuKirin G2 Оптимальний</h3>
+                <p class="specs">⏱️ 45 км/год | 🔋 до 50 км | 🔌 800 Вт | 🛞 Новий Дисплей</p>
+                <div class="product-footer">
+                    <span class="price">26 400 ₴</span>
+                    <button class="btn-buy" onclick="addToCart('KuKirin G2 Оптимальний', 26400)">Купити</button>
+                </div>
+            </div>
+
+            
+            <div class="product-card">
+                <div class="badge badge-power">Популярний</div>
+                <div class="product-img-box">
+                    <img src="https://pogocycles.ie/cdn/shop/files/kukirin-g2-pro-folding-electric-scooter-pogo-cycles-2.webp?v=1740996840" alt="KuKirin G2 Pro">
+                </div>
+                <h3>KuKirin G2 Pro</h3>
+                <p class="specs">⏱️ 50 км/год | 🔋 до 55 км | 🔌 600 Вт | ⚙️ Посилена рама</p>
+                <div class="product-footer">
+                    <span class="price">29 990 ₴</span>
+                    <button class="btn-buy" onclick="addToCart('KuKirin G2 Pro', 29990)">Купити</button>
+                </div>
+            </div>
+
+
+            <div class="product-card">
+                <div class="badge badge-power">Комфорт+</div>
+                <div class="product-img-box">
+                    <img src="https://lt2.pigugroup.eu/colours/960/357/02/96035702/elektrinis-paspirtukas-kukirin-g2-max-10-juodas-a8c92_original.jpg" alt="KuKirin G2 Max">
+                </div>
+                <h3>KuKirin G2 Max</h3>
+                <p class="specs">⏱️ 55 км/год | 🔋 до 80 км | 🔌 1000 Вт | 🛠️ Крута підвіска</p>
+                <div class="product-footer">
+                    <span class="price">32 990 ₴</span>
+                    <button class="btn-buy" onclick="addToCart('KuKirin G2 Max', 32990)">Купити</button>
+                </div>
+            </div>
+
+
+            <div class="product-card">
+                <div class="badge badge-premium">Повний привід</div>
+                <div class="product-img-box">
+                    <img src="https://svbike.com.ua/content/images/18/869x866l80nn0/elektrosamokat-g2-master-96828408123944.jpg" alt="KuKirin G2 Master">
+                </div>
+                <h3>KuKirin G2 Master Dual</h3>
+                <p class="specs">⏱️ 60 км/год | 🔋 до 70 км | 🔌 2x1000 Вт | 🔗 Два мотори</p>
+                <div class="product-footer">
+                    <span class="price">41 590 ₴</span>
+                    <button class="btn-buy" onclick="addToCart('KuKirin G2 Master Dual', 41590)">Купити</button>
+                </div>
+            </div>
+
+
+            <div class="product-card">
+                <div class="badge badge-premium">Супер-Тяж</div>
+                <div class="product-img-box">
+                    <img src="https://robobike.com.ua/image/cache/catalog/elektrosamokat/kukirin-g3-pro-electric-scooter/kukirin-g3-pro-electric-scooter-791x552.jpg" alt="KuKirin G3 Pro">
+                </div>
+                <h3>KuKirin G3 Pro Dual</h3>
+                <p class="specs">⏱️ 65 км/год | 🔋 до 80 км | 🔌 2x1200 Вт | 🛞 10" Колеса</p>
+                <div class="product-footer">
+                    <span class="price">49 900 ₴</span>
+                    <button class="btn-buy" onclick="addToCart('KuKirin G3 Pro Dual', 49900)">Купити</button>
+                </div>
+            </div>
+
+
+            <div class="product-card">
+                <div class="badge badge-premium">Швидкість</div>
+                <div class="product-img-box">
+                    <img src="https://altpower.com.ua/wp-content/uploads/2025/08/KuKirin-G4-2000W-e1754593419109.jpg" alt="KuKirin G4">
+                </div>
+                <h3>KuKirin G4</h3>
+                <p class="specs">⏱️ 70 км/год | 🔋 до 75 км | 🔌 2000 Вт | ⚡ Задній привід</p>
+                <div class="product-footer">
+                    <span class="price">39 990 ₴</span>
+                    <button class="btn-buy" onclick="addToCart('KuKirin G4', 39990)">Купити</button>
+                </div>
+            </div>
+
+
+            <div class="product-card">
+                <div class="badge badge-premium">Гіпер-Флагман</div>
+                <div class="product-img-box">
+                    <img src="https://kugoo.net.ua/images/detailed/44/11010812_te0o-wo.jpg" alt="KuKirin G4 Max">
+                </div>
+                <h3>KuKirin G4 Max</h3>
+                <p class="specs">⏱️ 86 км/год | 🔋 до 95 км | 🔌 2x1600 Вт | 🔋 60V 35.2Ah</p>
+                <div class="product-footer">
+                    <span class="price">84 890 ₴</span>
+                    <button class="btn-buy" onclick="addToCart('KuKirin G4 Max', 84890)">Купити</button>
+
+
+            <script>
+              let cart = JSON.parse(localStorage.getItem('kukirin_cart')) || [];
+
+              function addToCart(name, price) {
+               let existingItem = cart.find(item => item.name === name);
+                if (existingItem) {
+            existingItem.quantity += 1;
+        } else {
+            cart.push({ name: name, price: price, quantity: 1 });
+        }
+        localStorage.setItem('kukirin_cart', JSON.stringify(cart));
+        updateCartCounters();
+        alert(name + ' успішно додано до кошика!');
+    }
+
+    function updateCartCounters() {
+        const countElement = document.getElementById('cart-count');
+        if (countElement) {
+            let totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+            countElement.innerText = totalCount;
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        updateCartCounters();
+    });
+    </script>
+
+                </div>
+            </div>
+
